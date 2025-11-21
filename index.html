@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Segoe+UI:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <ul id="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="menu-toggle">&#9776;</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h2 class="typing">
+          <span>Hello, I'm Jericho Marcelo</span>
+        </h2>
+        <p>Software Engineer | Information Technology</p>
+        <img
+          src="images/561848645_24876850188649084_8150730272250949994_n.jpg"
+          alt="Profile Photo"
+          class="profile-photo"
+        />
+      </div>
+
+      <div class="cube-container">
+        <div class="cube">
+          <div class="cube-face front"></div>
+          <div class="cube-face back"></div>
+          <div class="cube-face right"></div>
+          <div class="cube-face left"></div>
+          <div class="cube-face top"></div>
+          <div class="cube-face bottom"></div>
+        </div>
+      </div>
+
+      <!-- Bokeh Effects -->
+      <div class="bokeh bokeh1"></div>
+      <div class="bokeh bokeh2"></div>
+      <div class="bokeh bokeh3"></div>
+      <div class="bokeh bokeh4"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          High-honor graduate with a strong foundation in software development,
+          proficient in C#, with hands-on experience building applications.
+          Eager to leverage strong problem-solving skills and a passion for
+          technology to contribute to innovative projects in a collaborative
+          environment.
+        </p>
+
+        <h3>Skills</h3>
+        <ul class="skills">
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>C# & ASP.NET</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>PHP</li>
+          <li>SQL</li>
+          <li>Git</li>
+          <li>Object-Oriented Programming</li>
+          <li>Data Structures and Algorithms</li>
+        </ul>
+
+        <h3>Connect</h3>
+        <div class="social-links">
+          <a href="https://github.com/jerich2121" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="images/Parak Clothing.png" alt="Parak Clothing Project" />
+            <h3>Web-Based Management System for Parak Clothing</h3>
+            <p>
+              A modern e-commerce website with product customization tools and
+              integrated chatbot technology.
+            </p>
+            <a href="https://parak.vercel.app/" target="_blank">Live Site</a> |
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="images/original-d298ec1c882a65993fd5fe600be16765.webp"
+              alt="Calculator Project"
+            />
+            <h3>Calculator</h3>
+            <p>
+              A lightweight, user-friendly calculator built with C# (Winforms)
+              supporting essential arithmetic operations.
+            </p>
+            <a href="#" target="_blank">Demo</a> |
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <div class="container">
+        <h2>Resume</h2>
+        <p>Download my professional resume for more details.</p>
+        <a href="files/myResume.pdf" class="btn" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- JavaScript for menu toggle -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
